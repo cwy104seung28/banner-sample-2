@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/sample.css">
+    <link rel="icon" type="image/png" href="./img/SYTlogotitle.svg">
+
+    <title>Banner sample2</title>
+</head>
+
+<body>
+    <div class="sample04-container">
+        <nav class="navbar navbar-expand-lg sample-nav nav-04">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/navbar-icon-white.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">服務內容</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">關於盛雲</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">系統介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">租賃服務</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">聯絡我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./img/line-icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="sample04-main">
+            <div class="sample-text">
+                <div class="sample-title">想要
+                    <span class="sample-notshow"></span>
+                    &emsp;&emsp;&emsp;&emsp;&ensp;
+                    <br>沒問題！</div>
+                <div class="sample-content">你許願，我來做！<br>要什麼有什麼！</div>
+                <button class="more-btn">
+                    <img class="more-img" src="./img/more-icon-black.svg" alt="">
+                    <img class="more-img-hover" src="./img/more-icon-yellow.svg" alt="">
+                    了解更多
+                </button>
+                <button class="wish-btn">
+                    <img class="more-img" src="./img/wish-icon-black.svg" alt="">
+                    <img class="more-img-hover" src="./img/wish-icon-yellow.svg" alt="">
+                    我要許願
+                </button>
+                <div id="fade2" class="sample-title" style="text-align:center;"></div>
+            </div>
+            
+        </main>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/particles.js-master/particles.js"></script>
+<script src="./js/app.js"></script>
+<script type="text/javascript">
+    // function fadetext() {
+    //     fade.style.filter = "alpha(opacity=" + x + ", style=0)";
+    //     x = ((y < 50) ? x + 4 : x - 4); y += 2;
+    //     if (y == 100) {
+    //         z = ((z >= texts.length - 1) ? 1 : z + 1); y = 0;
+    //         fade.innerHTML = texts[z]; fade.style.color = tcolor[z];
+    //     }
+    //     setTimeout("fadetext();", 10);
+    // }
+    // var texts = new Array(3),x = 0, y = 0, z = 1;
+    // texts[0] = "公文模組";
+    // texts[1] = "管理系統";
+    // texts[2] = "工程模組";
+    // fade.innerHTML = texts[0];
+    // fade.style.color = "#FCEE21";
+    // window.onload = fadetext;
+    function fadetext() {
+        fade1.style.filter = "alpha(opacity=" + x + ", style=0)";
+        fade2.style.filter = "alpha(opacity=" + x + ", style=0)";
+        x = ((y < 50) ? x + 4 : x - 4); y += 2;
+        if (y == 100) {
+            z = ((z >= texts.length - 1) ? 1 : z + 1); y = 0;
+            fade1.innerHTML = texts[z];
+            fade2.innerHTML = texts[z];
+        }
+        setTimeout("fadetext();", 50);
+    }
+    var texts = new Array(3), tcolor = new Array(3), x = 0, y = 0, z = 1;
+    texts[1] = "公文模組";
+    texts[2] = "管理系統";
+    texts[3] = "工程模組";
+    // tcolor[1] = "blue";
+    // tcolor[2] = "green";
+    // tcolor[3] = "#a0a";
+    fade1.innerHTML = texts[z];
+    fade2.innerHTML = texts[z];
+    window.onload = fadetext;
+</script>
+<script>
+    (function (d) {
+        var config = {
+            kitId: 'lsi8hjo',
+            scriptTimeout: 3000,
+            async: true
+        },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+    // particlesJS.load('particles-js', 'assets/particles.json', function () {
+    //     console.log('callback - particles.js config loaded');
+    // });
+</script>
+
+</html>
