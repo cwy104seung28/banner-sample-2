@@ -98,7 +98,6 @@
     // fade.style.color = "#FCEE21";
     // window.onload = fadetext;
     function fadetext() {
-        fade1.style.filter = "alpha(opacity=" + x + ", style=0)";
         fade2.style.filter = "alpha(opacity=" + x + ", style=0)";
         x = ((y < 50) ? x + 4 : x - 4); y += 2;
         if (y == 100) {
@@ -115,7 +114,6 @@
     // tcolor[1] = "blue";
     // tcolor[2] = "green";
     // tcolor[3] = "#a0a";
-    fade1.innerHTML = texts[z];
     fade2.innerHTML = texts[z];
     window.onload = fadetext;
 </script>
