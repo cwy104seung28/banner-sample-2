@@ -402,6 +402,10 @@ body .syt-container main.syt-main .syt-service {
   }
 }
 
+body .syt-container main.syt-main .syt-service .container h2, body .syt-container main.syt-main .syt-service .container h3 {
+  color: #006cae;
+}
+
 body .syt-container main.syt-main .syt-service .container h3 {
   font-weight: 600;
 }
