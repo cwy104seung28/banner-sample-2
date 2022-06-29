@@ -70,7 +70,9 @@ body {
                 }
 
                 .navbar-collapse {
-                    background-color: #9ea4f15b;
+                    @media (max-width:991px) {
+                        background-color: #9ea4f15b;
+                    }
                 }
 
                 ul {

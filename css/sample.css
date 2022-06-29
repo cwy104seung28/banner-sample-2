@@ -93,8 +93,10 @@ body .sample-container nav.sample-nav .container-fluid .navbar-toggler:focus {
           box-shadow: none;
 }
 
-body .sample-container nav.sample-nav .container-fluid .navbar-collapse {
-  background-color: #9ea4f15b;
+@media (max-width: 991px) {
+  body .sample-container nav.sample-nav .container-fluid .navbar-collapse {
+    background-color: #9ea4f15b;
+  }
 }
 
 body .sample-container nav.sample-nav .container-fluid ul .nav-link {
