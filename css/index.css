@@ -154,7 +154,7 @@ body .syt-container nav.syt-nav .container-fluid ul li .nav-btn {
 
 @media (max-width: 991px) {
   body .syt-container nav.syt-nav .container-fluid ul li .nav-btn {
-    margin: auto;
+    margin: 0px auto 10px;
   }
 }
 
