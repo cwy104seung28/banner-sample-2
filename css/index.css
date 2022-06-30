@@ -80,7 +80,6 @@ body .syt-container nav.syt-nav .container-fluid .navbar-brand img {
 body .syt-container nav.syt-nav .container-fluid .navbar-toggler {
   background-color: #9ea4f15b;
   border: #33376e 2px solid;
-  margin-right: 12px;
 }
 
 body .syt-container nav.syt-nav .container-fluid .navbar-toggler:focus {
@@ -153,6 +152,12 @@ body .syt-container nav.syt-nav .container-fluid ul li .nav-btn {
   padding: 10px 25px;
 }
 
+@media (max-width: 991px) {
+  body .syt-container nav.syt-nav .container-fluid ul li .nav-btn {
+    margin: auto;
+  }
+}
+
 body .syt-container nav.syt-nav .container-fluid ul .item-margin {
   margin-right: 250px;
 }
@@ -193,7 +198,7 @@ body .syt-container nav.syt-nav .container-fluid ul .item-margin-btn {
 
 @media (max-width: 991px) {
   body .syt-container nav.syt-nav .container-fluid ul .item-margin-btn {
-    margin: auto;
+    margin: 0px;
   }
 }
 
