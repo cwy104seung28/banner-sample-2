@@ -459,6 +459,8 @@ body {
                             }
                             @media screen and (max-width: 575px) {
                                 width: 150px;
+                            }
+                            @media screen and (max-width: 399px) {
                                 font-size: 14px;
                             }
                         }
@@ -526,6 +528,7 @@ body {
 
                 .main-title {
                     font-size: 20px;
+                    color: #006cae;
                 }
 
                 .title {

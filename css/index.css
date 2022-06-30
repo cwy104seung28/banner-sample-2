@@ -560,6 +560,11 @@ body .syt-container main.syt-main .syt-adventage .adventage-container .adventage
 @media screen and (max-width: 575px) {
   body .syt-container main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  body .syt-container main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
     font-size: 14px;
   }
 }
@@ -631,6 +636,7 @@ body .syt-container footer.syt-footer .footer-flex .footer-flex-phone .icon img 
 
 body .syt-container footer.syt-footer .footer-flex .main-title {
   font-size: 20px;
+  color: #006cae;
 }
 
 body .syt-container footer.syt-footer .footer-flex .title {
