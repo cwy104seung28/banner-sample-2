@@ -16,6 +16,18 @@ body nav.syt-nav {
   transition: 0.5s ease-in-out;
 }
 
+@media (max-width: 991px) {
+  body nav.syt-nav .container-fluid {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  body nav.syt-nav .container-fluid .navbar-brand {
+    margin-left: 12px;
+  }
+}
+
 body nav.syt-nav .container-fluid .navbar-brand img {
   width: 320px;
 }
@@ -53,6 +65,12 @@ body nav.syt-nav .container-fluid .navbar-brand img {
 body nav.syt-nav .container-fluid .navbar-toggler {
   background-color: #9ea4f15b;
   border: #223e72 2px solid;
+}
+
+@media (max-width: 991px) {
+  body nav.syt-nav .container-fluid .navbar-toggler {
+    margin-right: 12px;
+  }
 }
 
 body nav.syt-nav .container-fluid .navbar-toggler:focus {
