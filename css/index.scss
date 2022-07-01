@@ -54,7 +54,7 @@ body {
                 // }
 
                 img {
-                    width: 380px;
+                    width: 320px;
 
                     @media (max-width:1679px) {
                         width: 100%;
@@ -139,26 +139,32 @@ body {
 
                         &:hover {
                             transform: translateY(-5px);
-                            color: #FCFF9F;
+                            color: #f4f884;
                         }
                     }
 
                     .nav-link.active {
-                        color: #F9EB21;
+                        color: #f4f884;
                     }
 
                     .nav-btn {
-                        background-color: #F9EB21;
+                        background-color: #f4f884;
                         color: #000000;
                         border-radius: 30px;
-                        padding: 10px 25px;
+                        padding: 5px 20px;
+                        margin-top: 5px;
+                        &:hover{
+                            color: #f4f884;
+                            background-color: #000000;
 
+                        }
                         @media (max-width:1199px) {
-                            padding: 10px 10px;
+                            padding: 5px 10px;
+                            // margin-top: 0px;
                         }
 
                         @media (max-width:991px) {
-                            margin: 0px auto 10px;
+                            margin: 0px auto 20px;
                         }
                     }
                 }
@@ -191,7 +197,7 @@ body {
                     margin-right: 20px;
 
                     @media (max-width:1199px) {
-                        margin-right: 10px;
+                        margin-right: 5px;
                     }
 
                     @media (max-width:991px) {
@@ -235,7 +241,7 @@ body {
                 button {
                     width: 230px;
                     height: 55px;
-                    background-color: #F9EB21;
+                    background-color: #f4f884;
                     color: #000000;
                     font-size: 32px;
                     letter-spacing: 1px;
@@ -262,7 +268,7 @@ body {
 
                     &:hover {
                         background-color: #192D79;
-                        color: #FCFF9F;
+                        color: #f4f884;
                     }
 
                     img {
@@ -328,7 +334,7 @@ body {
 
                 .syt-content {
                     font-size: 55px;
-                    color: #FCEE21;
+                    color: #f4f884;
                     text-shadow: rgba(0, 0, 0, 0.5)2px 2px 5px;
 
                     @media (max-width:1299px) {
@@ -351,7 +357,7 @@ body {
                 text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
                 top: 0px;
                 left: 180px;
-                color: #F9EB21;
+                color: #f4f884;
 
                 @media (max-width:1299px) {
                     // top: 251px;
@@ -395,7 +401,6 @@ body {
             position: relative;
             color: #000;
             margin-bottom: 30px;
-
             @media screen and (max-width: 991px) {
                 height: auto;
             }
@@ -445,16 +450,14 @@ body {
                     border-radius: 10px;
                     background-color: #FFFFAC;
                     color: #3b3b3b;
-
                     transition: 0.5s ease-in-out;
 
+                    &:hover {
+                        background-color: #3b3b3b;
+                        color: #f4f884;
+                    }
                     @media screen and (max-width: 991px) {
                         position: static;
-                    }
-
-                    &:hover {
-                        background-color: #FFD600;
-                        color: #5c5c5c;
                     }
                 }
 
@@ -535,9 +538,14 @@ body {
         }
 
         .syt-adventage {
-
+            background-image: url("../img/adventage.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.6);
+            background-blend-mode: color;
             h2,
             h3 {
+                padding-top: 30px;
                 color: #006cae;
             }
 
@@ -574,7 +582,7 @@ body {
                         margin: 0px auto 10px;
                         padding: 10px;
                         @media screen and (max-width: 767px) {
-                            width: 160px;
+                            width: 180px;
                             font-size: 20px;
                             padding: 5px;
                         }

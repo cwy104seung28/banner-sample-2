@@ -17,7 +17,7 @@ body nav.syt-nav {
 }
 
 body nav.syt-nav .container-fluid .navbar-brand img {
-  width: 380px;
+  width: 320px;
 }
 
 @media (max-width: 1679px) {
@@ -118,29 +118,35 @@ body nav.syt-nav .container-fluid ul li .nav-link img {
 body nav.syt-nav .container-fluid ul li .nav-link:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  color: #FCFF9F;
+  color: #f4f884;
 }
 
 body nav.syt-nav .container-fluid ul li .nav-link.active {
-  color: #F9EB21;
+  color: #f4f884;
 }
 
 body nav.syt-nav .container-fluid ul li .nav-btn {
-  background-color: #F9EB21;
+  background-color: #f4f884;
   color: #000000;
   border-radius: 30px;
-  padding: 10px 25px;
+  padding: 5px 20px;
+  margin-top: 5px;
+}
+
+body nav.syt-nav .container-fluid ul li .nav-btn:hover {
+  color: #f4f884;
+  background-color: #000000;
 }
 
 @media (max-width: 1199px) {
   body nav.syt-nav .container-fluid ul li .nav-btn {
-    padding: 10px 10px;
+    padding: 5px 10px;
   }
 }
 
 @media (max-width: 991px) {
   body nav.syt-nav .container-fluid ul li .nav-btn {
-    margin: 0px auto 10px;
+    margin: 0px auto 20px;
   }
 }
 
@@ -184,7 +190,7 @@ body nav.syt-nav .container-fluid ul .item-margin-btn {
 
 @media (max-width: 1199px) {
   body nav.syt-nav .container-fluid ul .item-margin-btn {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
 
@@ -232,7 +238,7 @@ body main.syt-main .syt-banner .syt-text {
 body main.syt-main .syt-banner .syt-text button {
   width: 230px;
   height: 55px;
-  background-color: #F9EB21;
+  background-color: #f4f884;
   color: #000000;
   font-size: 32px;
   letter-spacing: 1px;
@@ -267,7 +273,7 @@ body main.syt-main .syt-banner .syt-text button {
 
 body main.syt-main .syt-banner .syt-text button:hover {
   background-color: #192D79;
-  color: #FCFF9F;
+  color: #f4f884;
 }
 
 body main.syt-main .syt-banner .syt-text button img {
@@ -334,7 +340,7 @@ body main.syt-main .syt-banner .syt-text .syt-title {
 
 body main.syt-main .syt-banner .syt-text .syt-content {
   font-size: 55px;
-  color: #FCEE21;
+  color: #f4f884;
   text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
 }
 
@@ -362,7 +368,7 @@ body main.syt-main .syt-banner #fade2 {
   text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
   top: 0px;
   left: 180px;
-  color: #F9EB21;
+  color: #f4f884;
 }
 
 @media (max-width: 1299px) {
@@ -470,15 +476,15 @@ body main.syt-main .syt-service .container a {
   transition: 0.5s ease-in-out;
 }
 
+body main.syt-main .syt-service .container a:hover {
+  background-color: #3b3b3b;
+  color: #f4f884;
+}
+
 @media screen and (max-width: 991px) {
   body main.syt-main .syt-service .container a {
     position: static;
   }
-}
-
-body main.syt-main .syt-service .container a:hover {
-  background-color: #FFD600;
-  color: #5c5c5c;
 }
 
 body main.syt-main .syt-service .container #card-1 {
@@ -559,8 +565,17 @@ body main.syt-main .syt-service .container .hoverzoom {
   }
 }
 
+body main.syt-main .syt-adventage {
+  background-image: url("../img/adventage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: color;
+}
+
 body main.syt-main .syt-adventage h2,
 body main.syt-main .syt-adventage h3 {
+  padding-top: 30px;
   color: #006cae;
 }
 
@@ -607,7 +622,7 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
 
 @media screen and (max-width: 767px) {
   body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
-    width: 160px;
+    width: 180px;
     font-size: 20px;
     padding: 5px;
   }
