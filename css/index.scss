@@ -222,10 +222,12 @@ body {
 
                 @media (max-width:991px) {
                     text-align: center;
+                    top: 30%;
                     left: calc(50% - 170px);
                 }
 
                 @media (max-width:575px) {
+                    top: 35%;
                     left: calc(50% - 140px);
                 }
 
@@ -555,6 +557,7 @@ body {
 
                         @media screen and (max-width: 767px) {
                             width: 75px;
+                            height: 50px;
                         }
 
                         img {
@@ -571,11 +574,14 @@ body {
                         margin: 0px auto 10px;
                         padding: 10px;
                         @media screen and (max-width: 767px) {
+                            width: 160px;
                             font-size: 20px;
+                            padding: 5px;
                         }
 
                         @media screen and (max-width: 575px) {
-                            font-size: 18px;
+                            width: 145px;
+                            font-size: 16px;
                         }
                     }
 
