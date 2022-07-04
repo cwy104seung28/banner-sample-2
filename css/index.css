@@ -87,7 +87,7 @@ body nav.syt-nav .container-fluid .navbar-collapse {
 body nav.syt-nav .container-fluid ul li .nav-link {
   font-size: 16px;
   color: #FFFFFF;
-  padding: 10px 30px;
+  padding: 10px 20px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -148,37 +148,7 @@ body nav.syt-nav .container-fluid ul li .nav-btn:hover {
 }
 
 body nav.syt-nav .container-fluid ul .item-margin {
-  margin-right: 250px;
-}
-
-@media (max-width: 1899px) {
-  body nav.syt-nav .container-fluid ul .item-margin {
-    margin-right: 200px;
-  }
-}
-
-@media (max-width: 1679px) {
-  body nav.syt-nav .container-fluid ul .item-margin {
-    margin-right: 150px;
-  }
-}
-
-@media (max-width: 1549px) {
-  body nav.syt-nav .container-fluid ul .item-margin {
-    margin-right: 100px;
-  }
-}
-
-@media (max-width: 1399px) {
-  body nav.syt-nav .container-fluid ul .item-margin {
-    margin-right: 50px;
-  }
-}
-
-@media (max-width: 991px) {
-  body nav.syt-nav .container-fluid ul .item-margin {
-    margin-right: 0px;
-  }
+  margin-right: 30px;
 }
 
 body nav.syt-nav .container-fluid ul .item-margin-btn {
@@ -496,18 +466,7 @@ body main.syt-main .syt-service .container #card-2 {
   background-position: 35%;
 }
 
-body main.syt-main .syt-service .container #card-3 {
-  background-image: url("../img/service3.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 67.5%;
-}
-
-body main.syt-main .syt-service .container .card {
-  position: relative;
-}
-
-body main.syt-main .syt-service .container .card:hover .card-body {
+body main.syt-main .syt-service .container #card-2:hover .card-body {
   height: 100%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -515,15 +474,57 @@ body main.syt-main .syt-service .container .card:hover .card-body {
 }
 
 @media (max-width: 1299px) {
-  body main.syt-main .syt-service .container .card:hover .card-body {
+  body main.syt-main .syt-service .container #card-2:hover .card-body {
     padding-top: 90%;
   }
 }
 
 @media (max-width: 991px) {
-  body main.syt-main .syt-service .container .card:hover .card-body {
+  body main.syt-main .syt-service .container #card-2:hover .card-body {
     height: auto;
     padding-top: 20px;
+  }
+}
+
+body main.syt-main .syt-service .container #card-3 {
+  background-image: url("../img/service3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 67.5%;
+}
+
+body main.syt-main .syt-service .container #card-3:hover .card-body {
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding-top: 55%;
+}
+
+@media (max-width: 1299px) {
+  body main.syt-main .syt-service .container #card-3:hover .card-body {
+    padding-top: 90%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container #card-3:hover .card-body {
+    height: auto;
+    padding-top: 20px;
+  }
+}
+
+body main.syt-main .syt-service .container .card {
+  position: relative;
+  height: 650px;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card {
+    height: 350px;
   }
 }
 
@@ -616,17 +617,10 @@ body main.syt-main .syt-service .container .hovershadow {
 }
 
 body main.syt-main .syt-service .container .hoverzoom {
-  height: 650px;
   -webkit-transition: -webkit-transform .5s linear;
   transition: -webkit-transform .5s linear;
   transition: transform .5s linear;
   transition: transform .5s linear, -webkit-transform .5s linear;
-}
-
-@media (max-width: 991px) {
-  body main.syt-main .syt-service .container .hoverzoom {
-    height: 350px;
-  }
 }
 
 body main.syt-main .syt-adventage {
