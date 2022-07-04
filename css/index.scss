@@ -52,32 +52,31 @@ body {
                 // @media (max-width:767px) {
                 //     margin-left: 5px;
                 // }
+                width: 280px;
+
+                // @media (max-width:1679px) {
+                //     width: 100%;
+                // }
+
+                @media (max-width:1549px) {
+                    width: 250px;
+                }
+
+                @media (max-width:1299px) {
+                    width: 230px;
+                }
+
                 @media (max-width:991px) {
+                    width: 200px;
                     margin-left: 12px;
                 }
 
+                @media (max-width:767px) {
+                    width: 150px;
+                }
+
                 img {
-                    width: 320px;
-
-                    @media (max-width:1679px) {
-                        width: 100%;
-                    }
-
-                    @media (max-width:1549px) {
-                        width: 300px;
-                    }
-
-                    @media (max-width:1299px) {
-                        width: 250px;
-                    }
-
-                    @media (max-width:991px) {
-                        width: 200px;
-                    }
-
-                    @media (max-width:767px) {
-                        width: 150px;
-                    }
+                    width: 100%;
                 }
             }
 
@@ -107,7 +106,7 @@ body {
             ul {
                 li {
                     .nav-link {
-                        font-size: 26px;
+                        font-size: 16px;
                         color: #FFFFFF;
                         padding: 10px 30px;
                         transition: 0.5s ease-in-out;
@@ -120,17 +119,17 @@ body {
                         //     padding: 10px 30px;
                         // }
 
-                        @media (max-width:1549px) {
-                            padding: 10px 20px;
-                        }
+                        // @media (max-width:1549px) {
+                        //     padding: 10px 20px;
+                        // }
 
-                        @media (max-width:1399px) {
-                            font-size: 20px;
-                        }
+                        // @media (max-width:1399px) {
+                        //     font-size: 20px;
+                        // }
 
-                        @media (max-width:1199px) {
-                            padding: 10px 5px;
-                        }
+                        // @media (max-width:1199px) {
+                        //     padding: 10px 5px;
+                        // }
 
                         @media (max-width:991px) {
                             padding: 15px 10px;
@@ -162,7 +161,7 @@ body {
                         border-radius: 30px;
                         padding: 5px 20px;
                         margin-top: 5px;
-
+                        font-size: 18px;
                         
                         &:hover {
                             color: #f4f884;
@@ -210,7 +209,7 @@ body {
                     margin-right: 20px;
 
                     @media (max-width:1199px) {
-                        margin-right: 5px;
+                        margin-right: 15px;
                     }
 
                     @media (max-width:991px) {
@@ -226,12 +225,12 @@ body {
         .syt-banner {
             position: relative;
             width: 100%;
-            height: calc(100vh - 90px);
+            height: 100vh;
             background-color: transparent;
 
             .syt-text {
                 position: absolute;
-                top: 20%;
+                top: 25%;
                 left: 200px;
                 letter-spacing: 5px;
 
@@ -252,13 +251,13 @@ body {
 
 
                 button {
-                    width: 230px;
-                    height: 55px;
+                    width: 200px;
+                    height: 50px;
                     background-color: #f4f884;
                     color: #000000;
-                    font-size: 32px;
+                    font-size: 26px;
                     letter-spacing: 1px;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     border-radius: 10px;
                     padding-top: 5px;
                     transition: 0.5s ease-in-out;
@@ -323,18 +322,18 @@ body {
                 }
 
                 .syt-title {
-                    font-size: 76px;
+                    font-size: 50px;
                     color: #FFFFFF;
                     text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
                     margin-bottom: 10px;
 
-                    @media (max-width:1299px) {
-                        font-size: 60px;
-                    }
+                    // @media (max-width:1299px) {
+                    //     font-size: 60px;
+                    // }
 
-                    @media (max-width:991px) {
-                        font-size: 50px;
-                    }
+                    // @media (max-width:991px) {
+                    //     font-size: 50px;
+                    // }
 
                     @media (max-width:575px) {
                         font-size: 40px;
@@ -346,7 +345,7 @@ body {
                 }
 
                 .syt-content {
-                    font-size: 55px;
+                    font-size: 42px;
                     color: #f4f884;
                     text-shadow: rgba(0, 0, 0, 0.5)2px 2px 5px;
 
@@ -366,20 +365,20 @@ body {
 
             #fade2 {
                 position: absolute;
-                font-size: 76px;
+                font-size: 50px;
                 text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
                 top: 0px;
-                left: 180px;
+                left: 140px;
                 color: #f4f884;
 
-                @media (max-width:1299px) {
-                    // top: 251px;
-                    left: 140px;
-                    font-size: 60px;
-                }
+                // @media (max-width:1299px) {
+                //     // top: 251px;
+                //     left: 140px;
+                //     font-size: 60px;
+                // }
 
                 @media (max-width:991px) {
-                    font-size: 50px;
+                    // font-size: 50px;
                     left: 135px;
                 }
 
@@ -393,6 +392,23 @@ body {
                     font-size: 35px;
                 }
             }
+
+            .scroll-down{
+                position: absolute;
+                color: #FFFFFF;
+                text-align: center;
+                left: calc(50% - 85px);
+                bottom: 30px;
+                font-size: 24px;
+                // animation: scroll-down-animation 2s infinite linear;
+                @media (max-width: 991px) {
+                    display: none;
+                }
+                i{
+                    display: block;
+                    animation: arrow-animation 1s infinite linear;
+                }
+            }
         }
 
         .syt-bg {
@@ -402,13 +418,14 @@ body {
             background-image: url("../img/sample4-BG.png");
             background-repeat: no-repeat;
             background-position: center;
+            background-size: cover;
             top: 0px;
             z-index: -1;
         }
 
         .syt-service {
             width: 100%;
-            height: 1000px;
+            height: 100vh;
             // opacity: 0;
             transition: 0.5s ease-in-out;
             position: relative;
@@ -591,12 +608,13 @@ body {
         }
 
         .syt-adventage {
+            height: 100vh;
             background-image: url("../img/adventage.jpg");
             background-position: center;
             background-size: cover;
             background-color: rgba(255, 255, 255, 0.6);
             background-blend-mode: color;
-
+            position: relative;
             h2,
             h3 {
                 padding-top: 30px;
@@ -674,11 +692,11 @@ body {
                 width: 100%;
                 height: 200px;
                 background-color: #f5f9ff;
-                position: relative;
+                position: absolute;
                 text-align: center;
                 padding-top: 50px;
                 font-size: 24px;
-
+                bottom: 0px;
                 @media (max-width: 991px) {
                     height: 100px;
                     font-size: 18px;
@@ -878,5 +896,28 @@ body {
 
     a {
         text-decoration: none;
+    }
+
+    @keyframes scroll-down-animation {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    @keyframes arrow-animation {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
     }
 }
