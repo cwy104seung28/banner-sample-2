@@ -16,9 +16,13 @@ $(window).scroll(function () {
     if (scroll > bannerCont) {
       $(".syt-nav").addClass("change-nav");
       $(".navbar-collapse").addClass("nav-no-bg");
+
+      $(".navbar-toggler").css("outline","transparent");
     } else {
       $(".syt-nav").removeClass("change-nav");
       $(".navbar-collapse").removeClass("nav-no-bg");
+
+      $(".navbar-toggler").css("outline","#223e72 2px solid");
     }
   
     // var serviceCont = $("#service-content").offset().top;
