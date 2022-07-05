@@ -24,54 +24,20 @@ $(window).scroll(function () {
 
       $(".navbar-toggler").css("outline","#223e72 2px solid");
     }
-  
-    // var serviceCont = $("#service-content").offset().top;
-    // if (scroll > serviceCont - hWin * 0.8) {
-    //   $("#service-content").addClass("show");
-    //   if ($("#service-content").hasClass("show")) {
-    //     for (var i = 1; i < 4; i++) {
-    //       $(`#card-${i}`).addClass(`drop-animation-${i}`);
-    //     }
-    //   }
-    //   // if ($("#contact").hasClass("show")) {
-    //     // $(".top-btn").removeClass("not-show-btn");
-    //     // $(".top-btn").addClass("show-btn");
-    //   // }
-    // } else {
-    //   $("#service-content").removeClass("show");
-    //   if (!$("#service-content").hasClass("show")) {
-    //     for (var i = 1; i < 4; i++) {
-    //       $(`#card-${i}`).removeClass(`drop-animation-${i}`);
-    //     }
-    //   }
-    //   // if (!$("#contact").hasClass("show")) {
-    //     // $(".top-btn").removeClass("show-btn");
-    //     // $(".top-btn").addClass("not-show-btn");
-    //   // }
-    // }
-  
-    // var aboutCont = ($("#about").offset().top - 64) - scroll;
-    // if(aboutCont<500){
-    //   $("#about-content").addClass("about-original");
-    //   $("#about-img").addClass("about-original");
-    // }
-    // else{
-    //   $("#about-content").removeClass("about-original");
-    //   $("#about-img").removeClass("about-original");
-  
-    // }
-    
-    // var contactCont = scroll - ($("#contact").offset().top - 100);
-    // if(contactCont<-800){
-    //   $(".top-btn").removeClass("show-btn");
-    //   $(".top-btn").addClass("not-show-btn");
-    // }
-    //   else{
-    //   $(".top-btn").removeClass("not-show-btn");
-    //   $(".top-btn").addClass("show-btn");
-    // }
   }
-    
+  // swiper
+  var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 // const express = require('express');
 // const app = express();
 // // 加入這兩行
