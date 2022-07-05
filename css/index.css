@@ -803,6 +803,12 @@ body main.syt-main .syt-works {
   height: 1080px;
 }
 
+@media (max-width: 991px) {
+  body main.syt-main .syt-works {
+    height: auto;
+  }
+}
+
 body main.syt-main .syt-works h2 {
   color: #0060ae;
   padding-top: 100px;
@@ -818,7 +824,7 @@ body main.syt-main .syt-works .swiper {
 
 @media (max-width: 991px) {
   body main.syt-main .syt-works .swiper {
-    height: 80%;
+    height: auto;
     padding: 50px 0px;
   }
 }

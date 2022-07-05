@@ -815,6 +815,9 @@ body {
             height: 1080px;
 
             // background-color: #b8c7e6;
+            @media (max-width: 991px) {
+                height: auto;
+            }
             h2 {
                 color: #0060ae;
                 padding-top: 100px;
@@ -828,7 +831,7 @@ body {
                 padding: 50px;
 
                 @media (max-width: 991px) {
-                    height: 80%;
+                    height: auto;
                     padding: 50px 0px;
                 }
                 .swiper-wrapper{
