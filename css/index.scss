@@ -831,7 +831,11 @@ body {
                     height: 80%;
                     padding: 50px 0px;
                 }
-
+                .swiper-wrapper{
+                    @media (max-width: 991px) {
+                        height: auto;
+                    }
+                }
                 .swiper-slide {
                     text-align: left;
                     font-size: 18px;
@@ -850,15 +854,16 @@ body {
 
                     .works-pic {
                         // width: 50%;
-                        height: 100%;
-                        background-color: #a5a5a5;
+                        // height: 100%;
 
                         @media (max-width: 991px) {
-                            height: 500px;
+                            height: auto;
                         }
 
                         img {
+                            width: 100%;
                             object-fit: cover;
+                            // margin: 15% 0px;
                         }
                     }
 
