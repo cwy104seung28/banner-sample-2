@@ -160,7 +160,7 @@ body {
                         padding: 5px 20px;
                         margin-top: 5px;
                         font-size: 18px;
-                        
+
                         &:hover {
                             color: #f4f884;
                             background-color: #000000;
@@ -223,7 +223,7 @@ body {
         .syt-banner {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 1080px;
             background-color: transparent;
 
             .syt-text {
@@ -391,18 +391,20 @@ body {
                 }
             }
 
-            .scroll-down{
+            .scroll-down {
                 position: absolute;
                 color: #FFFFFF;
                 text-align: center;
                 left: calc(50% - 85px);
                 bottom: 30px;
                 font-size: 24px;
+
                 // animation: scroll-down-animation 2s infinite linear;
                 @media (max-width: 991px) {
                     display: none;
                 }
-                i{
+
+                i {
                     display: block;
                     animation: arrow-animation 1s infinite linear;
                 }
@@ -478,6 +480,7 @@ body {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: 35%;
+
                     &:hover {
                         .card-body {
                             height: 100%;
@@ -501,6 +504,7 @@ body {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: 67.5%;
+
                     &:hover {
                         .card-body {
                             height: 100%;
@@ -527,6 +531,7 @@ body {
                     @media (max-width: 991px) {
                         height: 350px;
                     }
+
                     // height: 650px;
                     // &:hover {
                     //     .card-body {
@@ -632,13 +637,15 @@ body {
         }
 
         .syt-adventage {
-            height: 100vh;
-            background-image: url("../img/adventage.jpg");
-            background-position: center;
-            background-size: cover;
-            background-color: rgba(255, 255, 255, 0.6);
-            background-blend-mode: color;
+            height: auto;
+            // background-image: url("../img/adventage.jpg");
+            // background-position: center;
+            // background-size: cover;
+            // background-color: rgba(255, 255, 255, 0.6);
+            // background-blend-mode: color;
             position: relative;
+            background-color: rgba(255, 255, 255, 0.6);
+
             h2,
             h3 {
                 padding-top: 30px;
@@ -647,7 +654,45 @@ body {
 
             .adventage-container {
                 display: flex;
-                flex-wrap: wrap;
+                align-items: center;
+                padding: 20px 0px;
+
+                @media (max-width: 1199px) {
+                    display: block;
+                }
+
+                .adventage-pic {
+                    // @media  (max-width: 1199px) {
+                    //     position: absolute;
+                    //     opacity: 0.6;
+                    //     z-index: -1;
+                    // }
+                    // width: 80%;
+                    // height: 100%;
+                    // background-image: url("../img/adventage.png");
+                    // background-position: center;
+                    // background-size: cover;
+                    // background-color: rgba(255, 255, 255, 0.6);
+                    // background-blend-mode: color;
+
+                    img {
+                        width: 100%;
+                        border-top-right-radius: 250px;
+                        border-bottom-right-radius: 250px;
+
+                        @media (max-width: 1199px) {
+                            width: 80%;
+                            border-top-right-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+
+                .adventage-items {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
 
                 .adventage-card {
                     margin-bottom: 60px;
@@ -712,63 +757,68 @@ body {
                 }
             }
 
-            .adventage-other {
-                width: 100%;
-                height: 200px;
-                background-color: #f5f9ff;
+
+        }
+
+        .syt-contact-link {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f9ff;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 24px;
+            position: relative;
+
+            @media (max-width: 991px) {
+                height: 100px;
+                font-size: 18px;
+                padding-top: 15px;
+            }
+
+            .contact-link-btn {
+                width: 200px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #2b5fc0;
+                color: #FFFFFF;
+                font-size: 22px;
+
                 position: absolute;
-                text-align: center;
-                padding-top: 50px;
-                font-size: 24px;
-                bottom: 0px;
+                bottom: 20px;
+                left: calc(50% - 100px);
+
+                transition: 0.5s ease-in-out;
+
                 @media (max-width: 991px) {
-                    height: 100px;
-                    font-size: 18px;
-                    padding-top: 15px;
+                    width: 150px;
+                    height: 40px;
+                    font-size: 16px;
+                    bottom: 10px;
+                    left: calc(50% - 75px);
                 }
-                .adventage-other-btn {
-                    width: 200px;
-                    height: 50px;
-                    border-radius: 25px;
-                    background-color: #2b5fc0;
-                    color: #FFFFFF;
-                    font-size: 22px;
 
-                    position: absolute;
-                    bottom: 20px;
-                    left: calc(50% - 100px);
-
-                    transition: 0.5s ease-in-out;
-
-                    @media (max-width: 991px) {
-                        width: 150px;
-                        height: 40px;
-                        font-size: 16px;
-                        bottom: 10px;
-                        left: calc(50% - 75px);
-                    }
-
-                    &:hover{
-                        color: #2b5fc0;
-                        background-color: #afc6f1;
-                    }
+                &:hover {
+                    color: #2b5fc0;
+                    background-color: #afc6f1;
                 }
             }
+
         }
 
         .syt-works {
             height: 100vh;
             background-color: #b8c7e6;
+
             .swiper {
                 width: 100%;
                 height: 100%;
-              }
-        
-              .swiper-slide {
+            }
+
+            .swiper-slide {
                 text-align: center;
                 font-size: 18px;
                 background: #fff;
-        
+
                 display: flex;
                 -webkit-box-pack: center;
                 -ms-flex-pack: center;
@@ -778,14 +828,14 @@ body {
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
-              }
-        
-              .swiper-slide img {
+            }
+
+            .swiper-slide img {
                 display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-              }
+            }
         }
 
         .syt-aboutus-contact {
@@ -906,9 +956,11 @@ body {
 
     .container {
         max-width: 80%;
+
         @media (max-width: 1299px) {
             max-width: 85%;
         }
+
         @media (max-width: 991px) {
             max-width: 100%;
         }
@@ -950,24 +1002,29 @@ body {
     }
 
     @keyframes scroll-down-animation {
-        0%{
+        0% {
             transform: translateY(0px);
         }
-        50%{
+
+        50% {
             transform: translateY(10px);
         }
-        100%{
+
+        100% {
             transform: translateY(0px);
         }
     }
+
     @keyframes arrow-animation {
-        0%{
+        0% {
             transform: translateY(0px);
         }
-        50%{
+
+        50% {
             transform: translateY(10px);
         }
-        100%{
+
+        100% {
             transform: translateY(0px);
         }
     }
