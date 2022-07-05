@@ -192,14 +192,12 @@ body main.syt-main .syt-banner .syt-text {
 @media (max-width: 991px) {
   body main.syt-main .syt-banner .syt-text {
     text-align: center;
-    top: 30%;
     left: calc(50% - 170px);
   }
 }
 
 @media (max-width: 575px) {
   body main.syt-main .syt-banner .syt-text {
-    top: 35%;
     left: calc(50% - 140px);
   }
 }
