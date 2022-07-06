@@ -698,6 +698,10 @@ body {
                 .adventage-items {
                     display: flex;
                     flex-wrap: wrap;
+                    padding-right: 130px;
+                    @media (max-width: 1199px) {
+                        padding-right: 0px;
+                    }
                 }
 
                 .adventage-card {

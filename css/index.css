@@ -673,6 +673,13 @@ body main.syt-main .syt-adventage .adventage-container .adventage-items {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-right: 130px;
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-items {
+    padding-right: 0px;
+  }
 }
 
 body main.syt-main .syt-adventage .adventage-container .adventage-card {
