@@ -330,6 +330,7 @@ body main.syt-main .syt-banner .syt-text .syt-content {
 body main.syt-main .syt-banner #fade2 {
   position: absolute;
   font-size: 76px;
+  text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
   top: 0px;
   left: 180px;
   color: #F5B82E;
