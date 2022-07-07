@@ -699,6 +699,7 @@ body {
                     display: flex;
                     flex-wrap: wrap;
                     padding-right: 130px;
+
                     @media (max-width: 1199px) {
                         padding-right: 0px;
                     }
@@ -822,6 +823,7 @@ body {
             @media (max-width: 991px) {
                 height: auto;
             }
+
             h2 {
                 color: #0060ae;
                 padding-top: 100px;
@@ -838,11 +840,13 @@ body {
                     height: auto;
                     padding: 50px 0px;
                 }
-                .swiper-wrapper{
+
+                .swiper-wrapper {
                     @media (max-width: 991px) {
                         height: auto;
                     }
                 }
+
                 .swiper-slide {
                     height: 100%;
                     text-align: left;
@@ -882,6 +886,7 @@ body {
                             display: flex;
                             flex-wrap: wrap;
                             margin-bottom: 20px;
+
                             .tag {
                                 background-color: #EF9635;
                                 color: #FFFFFF;
@@ -897,9 +902,11 @@ body {
                             padding-top: 0px;
                             margin-bottom: 10px;
                         }
-                        .works-content{
+
+                        .works-content {
                             margin-bottom: 10px;
                         }
+
                         .works-more-btn {
                             width: 120px;
                             height: 40px;
@@ -956,6 +963,53 @@ body {
         .syt-aboutus-contact {
             height: 1000px;
             background-color: #b8d5e6;
+        }
+
+        .contact-service {
+            position: fixed;
+            z-index: 2;
+            bottom: 50px;
+            right: 20px;
+            display: none;
+            .service-btn {
+                width: 60px;
+                height: 60px;
+                background-color: #1A2F6A;
+                color: #FFFFFF;
+                font-size: 24px;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            .service-icon {
+                
+                .service-icon-ul {
+                    list-style: none;
+                    position: fixed;
+                    z-index: 2;
+                    bottom: 100px;
+                    right: 20px;
+                    .service-icon-li {
+                        width: 60px;
+                        height: 60px;
+                        background-color: #268CCD;
+                        color: #FFFFFF;
+                        font-size: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                        padding-top: 12px;
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            
+                        }
+                    }
+                    .line-icon{
+                        padding-top: 8px !important;
+                    }
+                }
+            }
         }
     }
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" href="./img/SYTlogotitle.svg">
 
-   
+
 </head>
 
 <body>
@@ -250,6 +250,30 @@
             </div>
         </section>
         <section class="syt-aboutus-contact" id="contact"></section>
+        <div class="contact-service">
+            <button class="service-btn">
+                <i class="fa-solid fa-comments"></i>
+            </button>
+            <div class="service-icon">
+                <ul class="service-icon-ul">
+                    <li class="service-icon-li line-icon">
+                        <img src="./img/line.png" alt="">
+                    </li>
+                    <li class="service-icon-li chat-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </li>
+                    <li class="service-icon-li contact-icon">
+                        <i class="fas fa-user"></i>
+                    </li>
+                    <li class="service-icon-li phone-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </li>
+                    <li class="service-icon-li email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer class="syt-footer">
         <div class="container">
@@ -340,6 +364,17 @@
     // particlesJS.load('particles-js', 'assets/particles.json', function () {
     //     console.log('callback - particles.js config loaded');
     // });
+</script>
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '39154a507ecde0cd6cff535889d4052e5e6cf16a';
+    window.smartsupp || (function (d) {
+        var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+        s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+        c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+        c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+    })(document);
 </script>
 <!-- <script src="./js/socket.io/socket.io.js"></script>
 <script>
