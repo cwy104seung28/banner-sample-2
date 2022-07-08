@@ -84,7 +84,7 @@
             </a>
         </section>
         <section class="syt-bg"></section>
-        <section class="syt-service" id="service">
+        <section class="syt-service" id="service-content">
             <div class="container text-center">
                 <h2>我們的產品與服務</h2>
                 <div class="row pb-lg-5">
@@ -249,7 +249,53 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="syt-aboutus-contact" id="contact"></section>
+        <section class="syt-aboutus-contact" id="contact">
+            <div class="container py-5">
+                <form action="mailto:c3207054@gmail.com">
+                    <div class="col-12 my-2">
+                        <label for="company">*公司名稱</label>
+                        <input class="form-control" type="text" name="company" placeholder="請輸入公司名稱" autocomplete="off"
+                            required="required" id="company">
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="telephone">*聯絡電話</label>
+                        <input class="form-control" type="number" name="telephone" placeholder="請輸入電話"
+                            autocomplete="off" id="telephone">
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="name">*您的姓名</label>
+                        <input class="form-control" type="text" name="name" placeholder="請輸入姓名" autocomplete="off"
+                            id="name">
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="email">*Email</label>
+                        <input class="form-control" type="text" name="email" placeholder="請輸入email" autocomplete="off"
+                            id="email">
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="service">感興趣的服務</label>
+                        <input type="radio" name="interest" value="html"> HTML
+                        <input type="radio" name="interest" value="css"> CSS
+                        <input type="radio" name="interest" value="js"> JavaScript
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="other">洽詢內容</label>
+                        <textarea class="form-control" name="service" placeholder="請輸入欲洽詢內容" autocomplete="off"
+                            id="other"></textarea>
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <div class="send" onclick="sendEmail()">
+                            <div class="arrowbtn"></div>
+                            <div class="arrowbtn arrowbtn2"></div>
+                            <div class="arrowbtn arrowbtn3"></div>
+                            <input class="details" type="submit" value="發送訊息">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
         <div class="contact-service">
             <button class="service-btn">
                 <i class="fa-solid fa-comments"></i>
@@ -317,6 +363,8 @@
 <script src="https://kit.fontawesome.com/9c0a200deb.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/index.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 <script type="text/javascript">
     // function fadetext() {
     //     fade.style.filter = "alpha(opacity=" + x + ", style=0)";
@@ -366,12 +414,13 @@
     //     console.log('callback - particles.js config loaded');
     // });
 </script>
+
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
     var _smartsupp = _smartsupp || {};
     _smartsupp.key = '39154a507ecde0cd6cff535889d4052e5e6cf16a';
     _smartsupp.offsetY = 10;
-    _smartsupp.color = '#1A2F6A' 
+    _smartsupp.color = '#1A2F6A'
     _smartsupp.ratingEnabled = true;
     window.smartsupp || (function (d) {
         var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
@@ -380,6 +429,57 @@
         c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
     })(document);
 </script>
+<!-- SMTP -->
+<script>
+    // function sendEmail() {
+    //     const nodemailer = require('nodemailer');
+    //     const transporter = nodemailer.createTransport({
+    //         host: 'smtp.gmail.com',
+    //         port: 465,
+    //         auth: {
+    //             user: 'c3207054@gmail.com',
+    //             pass: 'qfaqlyuxtyyrqqpc',
+    //         },
+    //     });
+
+    //     transporter.sendMail({
+    //         from: 'c3207054@gmail.com',
+    //         to: 'c3207054@gmail.com',
+    //         subject: '123',
+    //         html: '123',
+    //     }).then(info => {
+    //         console.log({ info });
+    //     }).catch(console.error);
+    // }
+
+</script>
+<!-- <script>
+    //宣告預設表單內容為空 (你想要的話也可以加東西)
+    // var initSubject='',initBody='';
+    //按下傳送按鈕後執行
+    function submitHandler() {
+        var to = "c3207054@gmail.com";//寫死的傳送對象就是公司的信箱
+        var name = name.value;//讀取ID為nameTextuser物件中的值
+        var email = email.value;
+        var tel = telephone.value;
+        var other = other.value;
+        //把user填的資料都塞到 mailbody中
+        var body ="";
+        body +="寄件者:"+name+'%0A'
+        body +="信箱:" +email+'%0A';
+        body +="連絡電話:" + tel+'%0A';
+        body +="洽詢內容" + other; 
+        //傳送的主要程式碼
+        mailTo.href = "mailto:" + to+ "?subject=" + "詢問內容" + "&body=" + body;
+        mailTo.click();
+    }
+    //在body onload
+//     function init() {
+//     subText.value = initSubject;
+//     toText.value = initTo;
+//     bodyText.value = initBody;
+// }
+</script> -->
 <!-- <script src="./js/socket.io/socket.io.js"></script>
 <script>
     var socket = io();
